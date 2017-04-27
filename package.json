@@ -1,0 +1,26 @@
+{
+    "name": "electron-jsonEditor",
+    "version": "0.1.0",
+    "description": "GUI tool to view, visiualizing and manipulation JSON data  ",
+    "main": "app/index.js",
+    "scripts": {
+        "start": "electron .",
+        "test": "mocha --compilers js:babel-register test/**/*.test.js",
+        "lint": "eslint",
+        "lint-all": "eslint js",
+        "clean": "rimraf releases *.log",
+        "package:win32": "electron-packager  .  --platform=win32 --arch=x64 --prune --asar=true -pac-out=releases  --icon=win-icon.ico  --overwrite"
+    },
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "electron": "^1.4.15"
+    },
+    "dependencies": {
+        "electron-config": "^0.2.1",
+        "electron-context-menu": "^0.8.0",
+        "mkdirp": "^0.5.1",
+        "node-jq": "^0.5.2",
+        "proxyquire": "^1.7.11"
+    }
+}

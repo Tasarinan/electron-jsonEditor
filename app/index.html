@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Json Viewer with Electron</title>
+    <link rel="stylesheet" href='../photon/css/photon.css'>
+    <link rel="stylesheet" href='./css/main.css'>
+    <!-- JSONEditor -->
+    <link href="./js/lib/jsoneditor.min.css" rel="stylesheet" type="text/css">
+    <script src="./js/lib/jsoneditor.min.js"></script>
+</head>
+
+<body>
+    <div class="window">
+        <div id="content-container" class="tab-content">
+            <div class="editor-wrapper">
+                <!-- Editor -->
+                <div id="json-input" class="panel-left">
+                </div>
+                <!-- Pannel splitter -->
+                <div class="splitter">
+                </div>
+
+                <!-- Output -->
+                <div id="filter-output" class="panel-right">
+                </div>
+            </div>
+
+            <!-- Bottom bar / filter input -->
+            <div class="bottom-wrapper hidden">
+                <div class="filter-icon-wrapper">
+                    <img class="filter-icon">
+                </div>
+                <input class="filter-input" tabindex="2">
+            </div>
+        </div>
+    </div>
+    <!-- Application entrypoint -->
+    <script>
+        require('./js/start')
+    </script>
+    <!-- Include other .js files -->
+</body>
+
+</html>

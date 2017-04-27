@@ -1,0 +1,9 @@
+node_modules
+.tmp
+releases
+dist
+npm-debug.log
+*.log
+tmp
+.electron-cache
+.vscode

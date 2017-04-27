@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: monaco;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+.editor-wrapper {
+    flex-direction: row;
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    height: calc(100vh);
+}
+
+.panel-left {
+    white-space: nowrap;
+    min-width: 150px;
+    height: 100%;
+    color: white;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.splitter {
+    flex: 0 0 auto;
+    width: 1px;
+    background: center center no-repeat darkgray;
+    min-height: 200px;
+    cursor: col-resize;
+}
+
+.panel-right {
+    flex: 1 1 auto;
+    width: 100%;
+    min-height: 200px;
+    min-width: 200px;
+    height: calc(100% - 40px);
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* BOTTOM BAR */
+
+.bottom-wrapper {
+    border-top: 1px solid lightgray;
+    background: #f7f7f7;
+    position: fixed;
+    z-index: 1000;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+    left: 0px;
+}
+
+.filter-input {
+    border-left: 1px solid lightgray;
+    font-family: monaco;
+    border-top: none;
+    font-size: 20px;
+    position: relative;
+    height: 40px;
+    width: 100%;
+    left: 46px;
+}
+
+.filter-input:focus {
+    outline-width: 0;
+}
+
+.filter-icon-wrapper {
+    position: absolute;
+    height: 42px;
+    width: 47px;
+    left: 0px;
+    top: -1px;
+}
+
+.filter-icon {
+    position: absolute;
+    opacity: .5;
+    width: 30px;
+    left: 8px;
+    top: 5px;
+}
